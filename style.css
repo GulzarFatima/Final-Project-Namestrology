@@ -1,0 +1,111 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    margin: 32px; 
+  }
+  
+  #page-wrapper {
+    position: relative;
+    z-index: 0;
+  }
+  
+  /* floating emoji background */
+  #emoji-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .emoji {
+    position: absolute;
+    font-size: 32px;
+    opacity: 1;
+    animation: floatEmoji 20s linear infinite;
+  }
+  
+  @keyframes floatEmoji {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-120vh) rotate(360deg);
+    }
+  }
+  
+  /* solid content box */
+  .result-box {
+    background-color: #150021;
+    padding: 40px;
+    margin: 60px auto;
+    width: 700px; 
+    min-height: 270px;       
+    height: auto;        
+    overflow-x: hidden;  
+    border-radius: 8px;
+    box-shadow: 0 0 12px #6600cc;
+    border: 1px solid #4b0082;
+  
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }  
+  
+  /* headings and content inside the box */
+  h1 {
+    font-size: 40px;
+    color: #b300ff;
+    text-shadow: 0 0 4px #ff00ff;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 240px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    background-color: #111;
+    color: #f0f0f0;
+  }
+  
+  button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #6600cc;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6a0dad;
+  }
+  
+  #result {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #00ffcc;
+    font-size: 20px;
+  }
+  
