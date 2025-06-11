@@ -16,7 +16,7 @@ if ($name === "") {
 }
 
 // set up OpenAI API key
-$apiKey = "";
+$apiKey = "OPENAI-API-KEY";
 
 // ==== calling the API ==== //
 
@@ -39,7 +39,7 @@ $data = [
   "messages" => [
     ["role" => "user", "content" => "Give a short, funny, sarcastic, and mysterious meaning for the name 
     \"$name\". 
-    Mention the real meaning of the name, but add a playful twist. Keep it simple, light, slightly evil, and under 2 lines. Only in roman Urdu without translation."
+    Mention the real meaning of the name, but add a playful twist. Keep it simple, light, slightly cute evil, and under 2 lines."
     ]
   ]
 
